@@ -1,0 +1,344 @@
+/* General Styles */
+:root {
+    --primary-color: #0d6efd;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--light-color);
+    background-color: #18212a;
+}
+
+.navbar.navbar-dark {
+    background-color: #151c22 !important;
+    box-shadow: none;
+    padding: 2rem 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar.navbar-dark.stickyadd {
+    background-color: #151c22 !important;
+    padding: .5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+.navbar-brand .symbol {
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    color: #000;
+    margin-right: 10px;
+}
+
+.navbar.navbar-dark.stickyadd .symbol {
+    display: none;
+}
+
+.navbar .nav-link {
+    margin: 0 8px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.social-icon li {
+    margin-bottom: 0 !important
+}
+
+.social-icon li a {
+    color: rgba(255, 255, 255, .55);
+    border: 1px solid rgba(255, 255, 255, .55);
+    display: inline-block;
+    height: 32px;
+    text-align: center;
+    font-size: 15px;
+    width: 32px;
+    line-height: 30px;
+    transition: all 0.4s ease;
+    border-radius: 7px
+}
+
+.social-icon li a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.navbar-brand .lastname {
+    font-weight: 400;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #151c22;
+    position: relative;
+}
+
+.home-mouse {
+    bottom: 5%;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 29px
+}
+
+.home-mouse .mouse-shape {
+    background-color: rgba(0, 0, 0, .3);
+    border: 2px solid #fff;
+    border-radius: 25px;
+    box-sizing: content-box;
+    height: 28px;
+    opacity: .8;
+    padding: 5px 11px;
+    width: 3px
+}
+
+.home-mouse .mouse-shape .mouse-wheel {
+    -webkit-animation-duration: 1.3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: scrollDown;
+    -webkit-animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-name: scrollDown;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    background-color: #fff;
+    border-radius: 25%;
+    height: 9px;
+    width: 3px
+}
+
+@-webkit-keyframes scrollDown {
+    0% {
+        opacity: 0
+    }
+
+    10% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    100% {
+        -webkit-transform: translateY(15px);
+        opacity: 0;
+        transform: translateY(15px)
+    }
+}
+
+@keyframes scrollDown {
+    0% {
+        opacity: 0
+    }
+
+    10% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    100% {
+        -webkit-transform: translateY(15px);
+        opacity: 0;
+        transform: translateY(15px)
+    }
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-image {
+    position: relative;
+    width: 410px;
+    height: 410px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 15px solid #444;
+    box-shadow: 0 0 25px 0 rgba(30, 30, 30, .8);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding-left: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p.text-light {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #aaa !important;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+}
+
+.hero-buttons .btn {
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 10rem;
+}
+
+@media (max-width: 991px) {
+    .profile-image {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 2rem;
+    }
+
+    .hero-content {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills Section */
+.card-title i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.list-unstyled li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.list-unstyled li i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* Projects Section */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Form */
+.form-control {
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Footer */
+footer .list-inline-item {
+    margin-right: 1rem;
+}
+
+footer .bi {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .bi:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Animations */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0a58ca;
+}
+
+/* Icons */
+.fa-solid, .fa-brands {
+    margin-right: 0.5rem;
+}
+
+footer .fa-brands {
+    font-size: 1.5rem;
+    margin-right: 0;
+    transition: color 0.3s ease;
+}
+
+footer .fa-brands:hover {
+    color: var(--primary-color);
+}
+
+.card-title .fa-solid {
+    color: var(--primary-color);
+    width: 24px;
+    text-align: center;
+}
+
+.list-unstyled .fa-solid {
+    margin-right: 10px;
+}
