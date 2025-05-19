@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop - 30) {
+        if (window.pageYOffset >= sectionTop - 58) {
             current = section.getAttribute('id');
         }
     });
@@ -33,14 +33,6 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
-
-
-// Navbar collapse on mobile
-const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-const menuToggle = document.getElementById('navbarNav');
-
-
 
 // Add animation on scroll
 const animateOnScroll = () => {
@@ -70,3 +62,8 @@ $(document).ready(function() {
     }
 });
 
+// Enable tooltips everywhere
+const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
