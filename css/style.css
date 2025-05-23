@@ -283,6 +283,353 @@ body {
     object-fit: cover;
 }
 
+.resume-item{}
+.resume-item h5{
+    font-weight: 600;
+    color: #FFC106;
+}
+
+.resume-left{
+    padding-right: 100px;
+    position: relative;
+}
+
+.resume-left::before{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #677E91;
+    content: '';
+    right: 35px;
+    top: 5px;
+}
+
+.resume-left::after{
+    position: absolute;
+    width: 1px;
+    background-color: #677E91;
+    content: '';
+    right: 42px;
+    top: 5px;
+    bottom: -10px;
+}
+
+.resume-left p{
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.resume-right p{
+    color: #ccc;
+}
+
+.project-preview {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.project-preview .image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.project-preview .image img {
+    max-width: 100%;
+    width: 100%;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.project-preview .overlay {
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.project-preview .overlay a.view-more {
+    color: #FFC106;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    display: inline-block;
+    line-height: 1;
+    padding: 12px 15px;
+    border-width: 1px;
+    border-style: solid;
+    font-weight: 500;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+.project-preview .overlay a.view-more:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0.35em;
+    top: -0.35em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 1;
+    -webkit-transition: left 150ms ease-out, top 150ms ease-out;
+    -moz-transition: left 150ms ease-out, top 150ms ease-out;
+    -o-transition: left 150ms ease-out, top 150ms ease-out;
+    transition: left 150ms ease-out, top 150ms ease-out;
+}
+
+.project-preview .overlay a.view-more > i,
+.project-preview .overlay a.view-more > span {
+    left: 0.35em;
+    top: -0.35em;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: left 150ms ease-out, top 150ms ease-out;
+    -moz-transition: left 150ms ease-out, top 150ms ease-out;
+    -o-transition: left 150ms ease-out, top 150ms ease-out;
+    transition: left 150ms ease-out, top 150ms ease-out;
+}
+
+.project-preview .overlay a.view-more > i {
+    margin-right: 5px;
+}
+
+.project-preview .overlay a.view-more:hover:after,
+.project-preview .overlay a.view-more:hover > i,
+.project-preview .overlay a.view-more:hover > span {
+    left: 0.175em;
+    top: -0.175em;
+}
+
+.project-preview .overlay .image-info {
+    position: absolute;
+    left: 15px;
+    bottom: 8px;
+    right: 15px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.project-preview .overlay .image-info .project-name {
+    text-transform: uppercase;
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.project-preview .overlay .image-info .project-name i {
+    margin-right: 5px;
+}
+
+.overlay .image-info .project-tags {
+    font-size: 0.85em;
+    text-transform: capitalize;
+}
+
+.project-preview:hover .image img {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.project-preview:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-preview:hover .overlay a.view-more,
+.project-preview:hover .overlay .image-info {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.modal-content{
+    border-radius: 0;
+}
+
+.modal-header{
+    border: 0;
+    padding: 0;
+    justify-content: flex-end;
+    border-radius: 0;
+}
+
+.modal-header .btn-close{
+    margin: 0;
+    border-radius: 0;
+    opacity: 0.8;
+    position: relative;
+}
+
+.modal-header .btn-close::after,
+.modal-header .btn-close::before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 16px;
+    height: 2px;
+    background-color: #FFC106;
+    transform: rotate(45deg);
+}
+
+.modal-header .btn-close::before{
+    transform: rotate(-45deg);
+}
+
+.modal-body{
+    padding: 0 2rem;
+}
+
+.project-popup {
+    position: relative;
+    width: auto;
+    padding-bottom: 2rem;
+}
+
+.project-popup .project-picture {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.project-popup .project-name {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 11px;
+    line-height: 1.3;
+    color: #eee;
+    font-weight: 600;
+}
+
+.project-popup .project-detail ul.list-project-info:not(:last-child) {
+    margin-bottom: 19px;
+    color: #eee;
+}
+
+.project-popup .project-detail ul.list-project-info li {
+    margin-bottom: 6px;
+}
+
+.project-popup .project-detail ul.list-project-info li:last-of-type {
+    margin-bottom: 0;
+}
+
+.project-popup .project-detail ul.list-project-info li .label {
+    font-weight: 700;
+}
+
+.project-popup .project-detail .project-description {
+    padding-right: 8%;
+    margin-bottom: 34px;
+}
+
+.project-popup .project-detail .project-description p {
+    margin-bottom: 0;
+    line-height: 2;
+    color: #ccc;
+}
+
+.project-popup .project-detail .project-description p:not(:first-of-type) {
+    margin-top: 17px;
+}
+
+.project-popup .project-detail .button-wrapper a.visit-project {
+    display: inline-block;
+    padding: 17px 30px;
+    position: relative;
+    font-weight: 500;
+    line-height: 1;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 6px;
+}
+
+.project-popup .project-detail .button-wrapper a.visit-project:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0.5em;
+    top: -0.5em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 1;
+    -webkit-transition: left 150ms ease-out, top 150ms ease-out;
+    -moz-transition: left 150ms ease-out, top 150ms ease-out;
+    -o-transition: left 150ms ease-out, top 150ms ease-out;
+    transition: left 150ms ease-out, top 150ms ease-out;
+}
+
+.project-popup .project-detail .button-wrapper a.visit-project > span {
+    left: 0.5em;
+    top: -0.5em;
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: left 150ms ease-out, top 150ms ease-out;
+    -moz-transition: left 150ms ease-out, top 150ms ease-out;
+    -o-transition: left 150ms ease-out, top 150ms ease-out;
+    transition: left 150ms ease-out, top 150ms ease-out;
+}
+
+.project-popup .project-detail .button-wrapper a.visit-project:hover:after,
+.project-popup .project-detail .button-wrapper a.visit-project:hover > span {
+    left: 0.25em;
+    top: -0.25em;
+}
+
+
 /* Footer */
 footer .list-inline-item {
     margin-right: 1rem;

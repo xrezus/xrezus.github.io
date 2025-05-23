@@ -185,7 +185,8 @@
             <div class="col-md-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="fa-solid fa-lightbulb text-warning"></i> Development Practices</h5>
+                        <h5 class="card-title"><i class="fa-solid fa-lightbulb text-warning"></i> Development Practices
+                        </h5>
                         <ul class="list-unstyled">
                             <li>SOLID Principles</li>
                             <li>OOP / Design Patterns</li>
@@ -206,9 +207,86 @@
     <div class="container">
         <h2 class="text-center mb-5">Resume</h2>
         <div class="row align-items-center">
-            <div class="col-lg-6">
-            </div>
-            <div class="col-lg-6">
+            <div class="offset-1 col-md-10">
+                <div class="resume-item row">
+                    <div class="col-md-4 resume-left text-end">
+                        <div>
+                            <h5>2 years</h5>
+                            <p>2023-present</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 resume-right">
+                        <h5>Goland Developer, Maxbitsolution</h5>
+                        <p>Development and support of web applications and microservices in Go. Design and
+                            implementation of RESTful API for integration with frontend solutions. Optimization of
+                            application performance and elimination of bottlenecks.</p>
+                    </div>
+                </div>
+                <div class="resume-item row">
+                    <div class="col-md-4 resume-left text-end">
+                        <div>
+                            <h5>3 years</h5>
+                            <p>2019-2022</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 resume-right">
+                        <h5>Senior PHP Developer, Antalogic LLC</h5>
+                        <p>Development from scratch and refinement of existing web applications for clients and
+                            partners. Creation of complex and progressive architectural solutions for products.
+                            Project management and negotiations with clients. Performing tasks according to the
+                            Scrum methodology.</p>
+                        <p>Conducting code reviews, performance reviews and mentoring
+                            junior developers. Creation of courses, pet projects and assignments for juniors.
+                            Development of internal company products. Setting up and maintaining the performance
+                            of the company's servers. Active participation in the development of the company.</p>
+                    </div>
+                </div>
+                <!-- Resume Item -->
+                <div class="resume-item row">
+                    <div class="col-md-4 resume-left text-end">
+                        <div>
+                            <h5>2 years</h5>
+                            <p>2017-2019</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 resume-right">
+                        <h5>Full-Stack Developer, BETAENERGY LLC</h5>
+                        <p>Development of new functionality for the company's internal product. Creation from
+                            scratch and correction of errors in the code of partner sites. SEO optimization and
+                            management of partner advertising campaigns. Development of architectural solutions for a partner startup.</p>
+                    </div>
+                </div>
+                <!-- Resume Item -->
+                <div class="resume-item row">
+                    <div class="col-md-4 resume-left text-end">
+                        <div>
+                            <h5>1 year</h5>
+                            <p>2017-2017</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 resume-right">
+                        <h5>Frontend Developer, MSA-IT Technologies LLC</h5>
+                        <p>Creating a project from scratch; Layout of site pages according to PSD, DTP and
+                            Avocode; Adaptive layout; Pixel perfect; Development of templates for CMS: Bitrix;
+                            Development and integration of plugins for AmoCRM and Bitrix24; Development of JS
+                            libraries and plugins for internal company projects.</p>
+                    </div>
+                </div>
+                <div class="resume-item row">
+                    <div class="col-md-4 resume-left text-end">
+                        <div>
+                            <h5>5 years</h5>
+                            <p>2011-2017</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 resume-right">
+                        <h5>Full-Stack Developer, Freelance</h5>
+                        <p>Creating a project from scratch; Layout of site pages according to PSD, Adaptive layout,
+                            Pixel perfect; Development of templates for CMS: Wordpress, Joomla, Bitrix;
+                            Development of plugins for various CMS; SEO site optimization; Work on finished
+                            projects as a main or auxiliary developer; Further support.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -220,118 +298,648 @@
         <h2 class="text-center mb-5">Projects</h2>
         <div class="row g-4">
             <div class="col-lg-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Project One</h5>
-                        <p class="card-text">A brief description of the first project and its key features.</p>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-primary">View Demo</a>
-                            <a href="#" class="btn btn-outline-primary">Source Code</a>
+                <div class="project-preview">
+                    <div class="image">
+                        <img src="img/projects/1.svg"
+                             alt="Project name">
+                    </div>
+                    <div class="overlay">
+                        <a class="view-more" href="#" data-bs-toggle="modal" data-bs-target="#project1">
+                            <i class="far fa-eye"></i>
+                            <span>View More</span>
+                        </a>
+                        <div class="image-info">
+                            <span class="project-name">
+                                <i class="fab fa-superpowers"></i>
+                                <span>Project name</span>
+                            </span>
+                            <div class="project-tags">
+                                <span>short desc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Project 1-->
+                <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="bg-dark modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body project-popup">
+                                <img class="project-picture"
+                                     src="img/projects/1.svg"
+                                     alt="Project name">
+                                <h4 class="project-name">Project name</h4>
+                                <div class="project-detail">
+                                    <ul class="list-project-info">
+                                        <li>
+                                            <span class="label">Client</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">Client</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Date</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">20 March 2025</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Categories</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">short desc</span>
+                                        </li>
+                                    </ul>
+                                    <div class="project-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse Rem
+                                            quidem, incidunt ad numquam quibusdam hic. Iste, sunt, corporis. Nisi itaque
+                                            eligendi illum quod, ipsam dolor commodi blanditiis iste. Consequuntur
+                                            doloribus accusantium sed tempora voluptatum, quisquam sit modi qui maxime
+                                            reiciendis, harum, earum. Eum, ex quam excepturi.</p>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="visit-project text-warning" href="#">
+                                            <span>Visit Project</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Two</h5>
-                        <p class="card-text">A brief description of the second project and its key features.</p>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-primary">View Demo</a>
-                            <a href="#" class="btn btn-outline-primary">Source Code</a>
+                <div class="project-preview">
+                    <div class="image">
+                        <img src="img/projects/1.svg"
+                             alt="Project name">
+                    </div>
+                    <div class="overlay">
+                        <a class="view-more" href="#" data-bs-toggle="modal" data-bs-target="#project2">
+                            <i class="far fa-eye"></i>
+                            <span>View More</span>
+                        </a>
+                        <div class="image-info">
+                            <span class="project-name">
+                                <i class="fab fa-superpowers"></i>
+                                <span>Project name</span>
+                            </span>
+                            <div class="project-tags">
+                                <span>short desc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Project 1-->
+                <div class="modal fade" id="project2" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="bg-dark modal-content">
+                            <div class="modal-header">
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body project-popup">
+                                <img class="project-picture"
+                                     src="img/projects/1.svg"
+                                     alt="Project name">
+                                <h4 class="project-name">Project name</h4>
+                                <div class="project-detail">
+                                    <ul class="list-project-info">
+                                        <li>
+                                            <span class="label">Client</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">Client</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Date</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">20 March 2025</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Categories</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">short desc</span>
+                                        </li>
+                                    </ul>
+                                    <div class="project-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse Rem
+                                            quidem, incidunt ad numquam quibusdam hic. Iste, sunt, corporis. Nisi itaque
+                                            eligendi illum quod, ipsam dolor commodi blanditiis iste. Consequuntur
+                                            doloribus accusantium sed tempora voluptatum, quisquam sit modi qui maxime
+                                            reiciendis, harum, earum. Eum, ex quam excepturi.</p>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="visit-project text-warning" href="#">
+                                            <span>Visit Project</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Three</h5>
-                        <p class="card-text">A brief description of the third project and its key features.</p>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-primary">View Demo</a>
-                            <a href="#" class="btn btn-outline-primary">Source Code</a>
+                <div class="project-preview">
+                    <div class="image">
+                        <img src="img/projects/1.svg"
+                             alt="Project name">
+                    </div>
+                    <div class="overlay">
+                        <a class="view-more" href="#" data-bs-toggle="modal" data-bs-target="#project3">
+                            <i class="far fa-eye"></i>
+                            <span>View More</span>
+                        </a>
+                        <div class="image-info">
+                            <span class="project-name">
+                                <i class="fab fa-superpowers"></i>
+                                <span>Project name</span>
+                            </span>
+                            <div class="project-tags">
+                                <span>short desc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Project 1-->
+                <div class="modal fade" id="project3" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="bg-dark modal-content">
+                            <div class="modal-header">
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body project-popup">
+                                <img class="project-picture"
+                                     src="img/projects/1.svg"
+                                     alt="Project name">
+                                <h4 class="project-name">Project name</h4>
+                                <div class="project-detail">
+                                    <ul class="list-project-info">
+                                        <li>
+                                            <span class="label">Client</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">Client</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Date</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">20 March 2025</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Categories</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">short desc</span>
+                                        </li>
+                                    </ul>
+                                    <div class="project-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse Rem
+                                            quidem, incidunt ad numquam quibusdam hic. Iste, sunt, corporis. Nisi itaque
+                                            eligendi illum quod, ipsam dolor commodi blanditiis iste. Consequuntur
+                                            doloribus accusantium sed tempora voluptatum, quisquam sit modi qui maxime
+                                            reiciendis, harum, earum. Eum, ex quam excepturi.</p>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="visit-project text-warning" href="#">
+                                            <span>Visit Project</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Project One</h5>
-                        <p class="card-text">A brief description of the first project and its key features.</p>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-primary">View Demo</a>
-                            <a href="#" class="btn btn-outline-primary">Source Code</a>
+                <div class="project-preview">
+                    <div class="image">
+                        <img src="img/projects/1.svg"
+                             alt="Project name">
+                    </div>
+                    <div class="overlay">
+                        <a class="view-more" href="#" data-bs-toggle="modal" data-bs-target="#project4">
+                            <i class="far fa-eye"></i>
+                            <span>View More</span>
+                        </a>
+                        <div class="image-info">
+                            <span class="project-name">
+                                <i class="fab fa-superpowers"></i>
+                                <span>Project name</span>
+                            </span>
+                            <div class="project-tags">
+                                <span>short desc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Project 1-->
+                <div class="modal fade" id="project4" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="bg-dark modal-content">
+                            <div class="modal-header">
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body project-popup">
+                                <img class="project-picture"
+                                     src="img/projects/1.svg"
+                                     alt="Project name">
+                                <h4 class="project-name">Project name</h4>
+                                <div class="project-detail">
+                                    <ul class="list-project-info">
+                                        <li>
+                                            <span class="label">Client</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">Client</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Date</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">20 March 2025</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Categories</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">short desc</span>
+                                        </li>
+                                    </ul>
+                                    <div class="project-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse Rem
+                                            quidem, incidunt ad numquam quibusdam hic. Iste, sunt, corporis. Nisi itaque
+                                            eligendi illum quod, ipsam dolor commodi blanditiis iste. Consequuntur
+                                            doloribus accusantium sed tempora voluptatum, quisquam sit modi qui maxime
+                                            reiciendis, harum, earum. Eum, ex quam excepturi.</p>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="visit-project text-warning" href="#">
+                                            <span>Visit Project</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Two</h5>
-                        <p class="card-text">A brief description of the second project and its key features.</p>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-primary">View Demo</a>
-                            <a href="#" class="btn btn-outline-primary">Source Code</a>
+                <div class="project-preview">
+                    <div class="image">
+                        <img src="img/projects/1.svg"
+                             alt="Project name">
+                    </div>
+                    <div class="overlay">
+                        <a class="view-more" href="#" data-bs-toggle="modal" data-bs-target="#project5">
+                            <i class="far fa-eye"></i>
+                            <span>View More</span>
+                        </a>
+                        <div class="image-info">
+                            <span class="project-name">
+                                <i class="fab fa-superpowers"></i>
+                                <span>Project name</span>
+                            </span>
+                            <div class="project-tags">
+                                <span>short desc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Project 1-->
+                <div class="modal fade" id="project5" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="bg-dark modal-content">
+                            <div class="modal-header">
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body project-popup">
+                                <img class="project-picture"
+                                     src="img/projects/1.svg"
+                                     alt="Project name">
+                                <h4 class="project-name">Project name</h4>
+                                <div class="project-detail">
+                                    <ul class="list-project-info">
+                                        <li>
+                                            <span class="label">Client</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">Client</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Date</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">20 March 2025</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Categories</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">short desc</span>
+                                        </li>
+                                    </ul>
+                                    <div class="project-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse Rem
+                                            quidem, incidunt ad numquam quibusdam hic. Iste, sunt, corporis. Nisi itaque
+                                            eligendi illum quod, ipsam dolor commodi blanditiis iste. Consequuntur
+                                            doloribus accusantium sed tempora voluptatum, quisquam sit modi qui maxime
+                                            reiciendis, harum, earum. Eum, ex quam excepturi.</p>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="visit-project text-warning" href="#">
+                                            <span>Visit Project</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Three</h5>
-                        <p class="card-text">A brief description of the third project and its key features.</p>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-primary">View Demo</a>
-                            <a href="#" class="btn btn-outline-primary">Source Code</a>
+                <div class="project-preview">
+                    <div class="image">
+                        <img src="img/projects/1.svg"
+                             alt="Project name">
+                    </div>
+                    <div class="overlay">
+                        <a class="view-more" href="#" data-bs-toggle="modal" data-bs-target="#project6">
+                            <i class="far fa-eye"></i>
+                            <span>View More</span>
+                        </a>
+                        <div class="image-info">
+                            <span class="project-name">
+                                <i class="fab fa-superpowers"></i>
+                                <span>Project name</span>
+                            </span>
+                            <div class="project-tags">
+                                <span>short desc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Project 1-->
+                <div class="modal fade" id="project6" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="bg-dark modal-content">
+                            <div class="modal-header">
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body project-popup">
+                                <img class="project-picture"
+                                     src="img/projects/1.svg"
+                                     alt="Project name">
+                                <h4 class="project-name">Project name</h4>
+                                <div class="project-detail">
+                                    <ul class="list-project-info">
+                                        <li>
+                                            <span class="label">Client</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">Client</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Date</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">20 March 2025</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Categories</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">short desc</span>
+                                        </li>
+                                    </ul>
+                                    <div class="project-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse Rem
+                                            quidem, incidunt ad numquam quibusdam hic. Iste, sunt, corporis. Nisi itaque
+                                            eligendi illum quod, ipsam dolor commodi blanditiis iste. Consequuntur
+                                            doloribus accusantium sed tempora voluptatum, quisquam sit modi qui maxime
+                                            reiciendis, harum, earum. Eum, ex quam excepturi.</p>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="visit-project text-warning" href="#">
+                                            <span>Visit Project</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Project One</h5>
-                        <p class="card-text">A brief description of the first project and its key features.</p>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-primary">View Demo</a>
-                            <a href="#" class="btn btn-outline-primary">Source Code</a>
+                <div class="project-preview">
+                    <div class="image">
+                        <img src="img/projects/1.svg"
+                             alt="Project name">
+                    </div>
+                    <div class="overlay">
+                        <a class="view-more" href="#" data-bs-toggle="modal" data-bs-target="#project7">
+                            <i class="far fa-eye"></i>
+                            <span>View More</span>
+                        </a>
+                        <div class="image-info">
+                            <span class="project-name">
+                                <i class="fab fa-superpowers"></i>
+                                <span>Project name</span>
+                            </span>
+                            <div class="project-tags">
+                                <span>short desc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Project 1-->
+                <div class="modal fade" id="project7" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="bg-dark modal-content">
+                            <div class="modal-header">
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body project-popup">
+                                <img class="project-picture"
+                                     src="img/projects/1.svg"
+                                     alt="Project name">
+                                <h4 class="project-name">Project name</h4>
+                                <div class="project-detail">
+                                    <ul class="list-project-info">
+                                        <li>
+                                            <span class="label">Client</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">Client</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Date</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">20 March 2025</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Categories</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">short desc</span>
+                                        </li>
+                                    </ul>
+                                    <div class="project-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse Rem
+                                            quidem, incidunt ad numquam quibusdam hic. Iste, sunt, corporis. Nisi itaque
+                                            eligendi illum quod, ipsam dolor commodi blanditiis iste. Consequuntur
+                                            doloribus accusantium sed tempora voluptatum, quisquam sit modi qui maxime
+                                            reiciendis, harum, earum. Eum, ex quam excepturi.</p>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="visit-project text-warning" href="#">
+                                            <span>Visit Project</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Two</h5>
-                        <p class="card-text">A brief description of the second project and its key features.</p>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-primary">View Demo</a>
-                            <a href="#" class="btn btn-outline-primary">Source Code</a>
+                <div class="project-preview">
+                    <div class="image">
+                        <img src="img/projects/1.svg"
+                             alt="Project name">
+                    </div>
+                    <div class="overlay">
+                        <a class="view-more" href="#" data-bs-toggle="modal" data-bs-target="#project8">
+                            <i class="far fa-eye"></i>
+                            <span>View More</span>
+                        </a>
+                        <div class="image-info">
+                            <span class="project-name">
+                                <i class="fab fa-superpowers"></i>
+                                <span>Project name</span>
+                            </span>
+                            <div class="project-tags">
+                                <span>short desc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Project 1-->
+                <div class="modal fade" id="project8" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="bg-dark modal-content">
+                            <div class="modal-header">
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body project-popup">
+                                <img class="project-picture"
+                                     src="img/projects/1.svg"
+                                     alt="Project name">
+                                <h4 class="project-name">Project name</h4>
+                                <div class="project-detail">
+                                    <ul class="list-project-info">
+                                        <li>
+                                            <span class="label">Client</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">Client</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Date</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">20 March 2025</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Categories</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">short desc</span>
+                                        </li>
+                                    </ul>
+                                    <div class="project-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse Rem
+                                            quidem, incidunt ad numquam quibusdam hic. Iste, sunt, corporis. Nisi itaque
+                                            eligendi illum quod, ipsam dolor commodi blanditiis iste. Consequuntur
+                                            doloribus accusantium sed tempora voluptatum, quisquam sit modi qui maxime
+                                            reiciendis, harum, earum. Eum, ex quam excepturi.</p>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="visit-project text-warning" href="#">
+                                            <span>Visit Project</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Three</h5>
-                        <p class="card-text">A brief description of the third project and its key features.</p>
-                        <div class="d-flex gap-2">
-                            <a href="#" class="btn btn-primary">View Demo</a>
-                            <a href="#" class="btn btn-outline-primary">Source Code</a>
+                <div class="project-preview">
+                    <div class="image">
+                        <img src="img/projects/1.svg"
+                             alt="Project name">
+                    </div>
+                    <div class="overlay">
+                        <a class="view-more" href="#" data-bs-toggle="modal" data-bs-target="#project9">
+                            <i class="far fa-eye"></i>
+                            <span>View More</span>
+                        </a>
+                        <div class="image-info">
+                            <span class="project-name">
+                                <i class="fab fa-superpowers"></i>
+                                <span>Project name</span>
+                            </span>
+                            <div class="project-tags">
+                                <span>short desc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Project 1-->
+                <div class="modal fade" id="project9" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="bg-dark modal-content">
+                            <div class="modal-header">
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body project-popup">
+                                <img class="project-picture"
+                                     src="img/projects/1.svg"
+                                     alt="Project name">
+                                <h4 class="project-name">Project name</h4>
+                                <div class="project-detail">
+                                    <ul class="list-project-info">
+                                        <li>
+                                            <span class="label">Client</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">Client</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Date</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">20 March 2025</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Categories</span>
+                                            <span class="separator">:</span>
+                                            <span class="value">short desc</span>
+                                        </li>
+                                    </ul>
+                                    <div class="project-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse Rem
+                                            quidem, incidunt ad numquam quibusdam hic. Iste, sunt, corporis. Nisi itaque
+                                            eligendi illum quod, ipsam dolor commodi blanditiis iste. Consequuntur
+                                            doloribus accusantium sed tempora voluptatum, quisquam sit modi qui maxime
+                                            reiciendis, harum, earum. Eum, ex quam excepturi.</p>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <a class="visit-project text-warning" href="#">
+                                            <span>Visit Project</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
