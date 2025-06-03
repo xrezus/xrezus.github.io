@@ -745,6 +745,10 @@ footer .bi:hover {
 }
 
 @media (max-width: 575px) {
+    .navbar-brand {
+        display: none;
+    }
+
     .profile-image {
         width: auto;
         height: auto;
