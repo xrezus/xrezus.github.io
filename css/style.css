@@ -702,6 +702,13 @@ footer .bi:hover {
         margin: 0 !important;
     }
 
+    .social-icon li a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
     .list-inline-item:not(:last-child) {
         margin-right: .2rem;
     }
